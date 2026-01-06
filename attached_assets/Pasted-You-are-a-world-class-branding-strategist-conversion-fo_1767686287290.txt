@@ -1,0 +1,183 @@
+You are a world-class branding strategist, conversion-focused web designer, and freelance business expert.
+
+I am a freelancer / small agency building a professional portfolio website to:
+
+Attract high-quality clients
+
+Build strong personal/brand authority
+
+Promote past work effectively
+
+Convert visitors into paying clients
+
+🎯 OBJECTIVE
+
+Create a complete, professional, client-focused portfolio website structure that acts as a 24/7 salesperson.
+
+🏗️ WEBSITE STRUCTURE (MANDATORY)
+
+Design the website with the following pages in this exact order, and for each page, clearly explain what content should be included and why it matters for clients.
+
+1️⃣ Home Page
+
+Strong hero headline (what we do + who we help)
+
+Clear sub-headline (problem + outcome)
+
+Primary & secondary CTAs
+
+Trust signals (experience, projects, results)
+
+Brief overview of services
+
+Why choose us (unique value proposition)
+
+👉 Focus on clarity, confidence, and conversion.
+
+2️⃣ About Us Page
+
+Who we help (target clients)
+
+Problems we solve
+
+Mission & values
+
+Experience & credibility
+
+What makes us different
+
+👉 Avoid biography-style writing.
+👉 Make it client-centric, not ego-centric.
+
+3️⃣ Services Page
+
+For each service, include:
+
+Service name
+
+Problem it solves
+
+Deliverables
+
+Client benefits & outcomes
+
+Ideal client (who this is for)
+
+CTA
+
+👉 Sell results and value, not just skills or tools.
+
+4️⃣ Projects / Case Studies Page
+
+For each project, include:
+
+Client problem
+
+Strategy & solution
+
+Tech stack
+
+Execution process
+
+Measurable results (or expected impact)
+
+Live demo / screenshots
+
+👉 Use the format: Problem → Solution → Result
+👉 Even personal or dummy projects should sound professional.
+
+5️⃣ Testimonials Page
+
+Client feedback with name & role
+
+Problem they had
+
+Result after working with us
+
+👉 If no real clients, suggest ethical alternatives (internships, mentors, beta users).
+
+6️⃣ Pricing / Packages Page
+
+2–3 pricing tiers (Starter / Growth / Premium)
+
+What’s included in each
+
+Who it’s best for
+
+“Starting from” pricing approach
+
+Mention custom pricing availability
+
+👉 Use pricing to filter unserious clients.
+
+7️⃣ Contact Page
+
+Simple contact form
+
+Email / WhatsApp / Calendly
+
+Clear CTA
+
+Response-time reassurance
+
+👉 Make contacting effortless.
+
+8️⃣ Blog / Insights Page (Optional but Recommended)
+
+Topics to write about
+
+SEO & authority benefits
+
+Content ideas relevant to potential clients
+
+🎨 DESIGN & BRANDING GUIDELINES
+
+Clean, modern, minimal design
+
+Mobile-first approach
+
+Fast-loading pages
+
+Clear CTAs on every page
+
+Consistent fonts & color palette
+
+Professional tone (not casual, not robotic)
+
+🚫 COMMON MISTAKES TO AVOID
+
+Generic content
+
+Overused buzzwords
+
+Too many services
+
+No clear CTA
+
+Talking too much about tools instead of results
+
+🔥 BONUS (VERY IMPORTANT)
+
+Suggest:
+
+A lead magnet idea (free audit, consultation, checklist, etc.)
+
+A unique positioning angle to stand out from competitors
+
+One conversion optimization tip per page
+
+✍️ OUTPUT FORMAT
+
+Clear headings per page
+
+Bullet points
+
+Actionable explanations
+
+Professional yet persuasive tone
+
+Think like a client who is deciding whether to pay or leave
+
+Final goal:
+This website should make a visitor think:
+👉 “These people understand my problem. I should hire them.”
