@@ -36,7 +36,7 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link href="/" className="font-display text-2xl font-bold tracking-tight z-50">
-            STRATEGIST<span className="text-accent">.</span>
+            GEN TECH<span className="text-accent">.</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -65,6 +65,7 @@ export function Navigation() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden p-2 -mr-2 text-primary hover:bg-muted rounded-full transition-colors z-50"
+            aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

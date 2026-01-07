@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero */}
       <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -27,7 +27,7 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-              Strategist is a digital branding agency that helps ambitious companies transform their positioning, clarify their message, and scale with confidence.
+              Gen Tech delivers enterprise-grade software solutions, cloud infrastructure, and digital products that solve complex challenges and drive growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -45,7 +45,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        
+
         {/* Background Blur */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-3xl -z-10 pointer-events-none" />
       </section>
@@ -57,7 +57,7 @@ export default function Home() {
             Trusted by industry leaders
           </p>
           <div className="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-             {/* Using Lucide icons as placeholders for logos */}
+            {/* Using Lucide icons as placeholders for logos */}
             <div className="flex items-center gap-2 font-display font-bold text-xl"><Zap className="w-6 h-6" /> Acme Corp</div>
             <div className="flex items-center gap-2 font-display font-bold text-xl"><TrendingUp className="w-6 h-6" /> Growth.io</div>
             <div className="flex items-center gap-2 font-display font-bold text-xl"><Users className="w-6 h-6" /> TeamSync</div>
@@ -70,16 +70,16 @@ export default function Home() {
       <Section className="bg-white">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl mb-6">Design isn't just art. <br />It's a business tool.</h2>
+            <h2 className="text-4xl md:text-5xl mb-6">Code isn't just syntax. <br />It's a business engine.</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Most brands fail because they focus on looking good instead of communicating clearly. We bridge the gap between aesthetics and strategy to create systems that drive real growth.
+              Most projects fail because they value features over functionality. We bridge the gap between complex engineering and business value to build systems that scale effortlessly.
             </p>
             <ul className="space-y-4">
               {[
-                "Clarify your market positioning",
-                "Design a visual identity that scales",
-                "Build high-conversion digital experiences",
-                "Create a cohesive brand narrative"
+                "Enterprise-grade software architecture",
+                "Cloud-native infrastructure & DevOps",
+                "High-performance web applications",
+                "Security and compliance by design"
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-lg font-medium">
                   <div className="w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center text-accent">
@@ -93,23 +93,26 @@ export default function Home() {
           <div className="relative">
             {/* abstract visual */}
             <div className="aspect-square rounded-3xl bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden relative">
-               {/* unsplash minimalist architecture */}
-               <img 
-                 src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" 
-                 alt="Minimalist office"
-                 className="w-full h-full object-cover mix-blend-multiply opacity-80"
-               />
-               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              {/* unsplash minimalist architecture */}
+              <img
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
+                alt="Minimalist office"
+                loading="lazy"
+                width={800}
+                height={800}
+                className="w-full h-full object-cover mix-blend-multiply opacity-80"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
-            
+
             <Card className="absolute -bottom-10 -left-10 w-64 p-6 animate-in slide-in-from-bottom-10 fade-in duration-1000 delay-300">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                   <TrendingUp className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Conversion Rate</p>
-                  <p className="text-2xl font-bold">+145%</p>
+                  <p className="text-sm text-muted-foreground">System Uptime</p>
+                  <p className="text-2xl font-bold">99.99%</p>
                 </div>
               </div>
               <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
@@ -128,22 +131,22 @@ export default function Home() {
             We focus on three core pillars to build comprehensive brand experiences.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Brand Strategy",
-              desc: "Positioning, messaging, and market analysis to define your competitive edge.",
+              title: "Digital Transformation",
+              desc: "Modernize your business operations with cutting-edge technology solutions.",
               icon: Users
             },
             {
-              title: "Visual Identity",
-              desc: "Logo design, typography, and color systems that make you unforgettable.",
+              title: "Custom Software",
+              desc: "Scalable, high-performance web and mobile applications tailored to your needs.",
               icon: Zap
             },
             {
-              title: "Digital Experience",
-              desc: "Web design and development focused on user experience and conversion.",
+              title: "Strategic Innovation",
+              desc: "Future-proof your business with data-driven insights and tech strategies.",
               icon: TrendingUp
             }
           ].map((service, i) => (
@@ -166,7 +169,7 @@ export default function Home() {
       {/* CTA */}
       <section className="py-32 bg-primary text-primary-foreground text-center relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to transform your brand?</h2>
+          <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to modernize your business?</h2>
           <p className="text-xl text-primary-foreground/60 mb-10 max-w-2xl mx-auto">
             Book a discovery call today and let's discuss how we can help you reach your goals.
           </p>
@@ -177,7 +180,7 @@ export default function Home() {
             Start Your Project <ArrowRight className="ml-2 w-5 h-5" />
           </Link>
         </div>
-        
+
         {/* Decorative Grid */}
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20" />
       </section>

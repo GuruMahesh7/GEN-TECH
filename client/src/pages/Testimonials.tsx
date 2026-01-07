@@ -6,7 +6,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Strategist completely transformed how we present ourselves to the market. Our leads increased by 200% within the first month of launching the new site.",
+    quote: "Gen Tech completely transformed how we present ourselves to the market. Our leads increased by 200% within the first month of launching the new site.",
     author: "Sarah Jenkins",
     role: "CEO, FinTech Sol",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
@@ -18,7 +18,7 @@ const testimonials = [
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop"
   },
   {
-    quote: "Professional, responsive, and incredibly talented. Working with Strategist felt like having a dedicated design team in-house.",
+    quote: "Professional, responsive, and incredibly talented. Working with Gen Tech felt like having a dedicated design team in-house.",
     author: "Elena Rodriguez",
     role: "Marketing Director, Lumina",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop"
@@ -29,7 +29,7 @@ export default function Testimonials() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <Section className="pt-48 pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl mb-6">Client Stories</h1>
@@ -58,7 +58,7 @@ export default function Testimonials() {
           ))}
         </div>
       </Section>
-      
+
       <Footer />
     </div>
   );

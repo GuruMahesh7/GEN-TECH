@@ -13,20 +13,33 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Mail, MapPin, Phone } from "lucide-react";
 import { z } from "zod";
 
+const contactFormSchema = insertInquirySchema.extend({
+  phone: z.string().min(10, "Phone number is required"),
+});
+
+type ContactFormData = z.infer<typeof contactFormSchema>;
+
 export default function Contact() {
   const { mutate, isPending } = useCreateInquiry();
-  
-  const form = useForm({
-    resolver: zodResolver(insertInquirySchema),
+
+  const form = useForm<ContactFormData>({
+    resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   });
 
-  function onSubmit(data: z.infer<typeof insertInquirySchema>) {
-    mutate(data, {
+  function onSubmit(data: ContactFormData) {
+    const whatsappMessage = `Name: ${data.name}%0AEmail: ${data.email}%0APhone: ${data.phone}%0AMessage: ${data.message}`;
+    const whatsappUrl = `https://wa.me/7672018022?text=${whatsappMessage}`;
+
+    window.open(whatsappUrl, '_blank');
+
+    const { phone, ...dbData } = data;
+    mutate(dbData, {
       onSuccess: () => form.reset(),
     });
   }
@@ -34,7 +47,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <Section className="pt-48">
         <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
           <div>
@@ -42,7 +55,7 @@ export default function Contact() {
             <p className="text-xl text-muted-foreground mb-12">
               Fill out the form and we'll get back to you within 24 hours. We're excited to hear from you.
             </p>
-            
+
             <div className="space-y-8">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-muted rounded-full">
@@ -50,7 +63,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Email Us</h4>
-                  <p className="text-muted-foreground">hello@strategist.com</p>
+                  <p className="text-muted-foreground">hello@gentech.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -68,7 +81,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Visit Us</h4>
-                  <p className="text-muted-foreground">123 Design District<br/>New York, NY 10013</p>
+                  <p className="text-muted-foreground">123 Design District<br />New York, NY 10013</p>
                 </div>
               </div>
             </div>
@@ -90,7 +103,7 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
-                
+
                 <FormField
                   control={form.control}
                   name="email"
@@ -104,7 +117,21 @@ export default function Contact() {
                     </FormItem>
                   )}
                 />
-                
+
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Phone No</FormLabel>
+                      <FormControl>
+                        <Input placeholder="+91 9876543210" {...field} className="h-12 rounded-xl" />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
                 <FormField
                   control={form.control}
                   name="message"
@@ -112,20 +139,20 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Message</FormLabel>
                       <FormControl>
-                        <Textarea 
-                          placeholder="Tell us about your project..." 
-                          className="min-h-[150px] rounded-xl resize-none" 
-                          {...field} 
+                        <Textarea
+                          placeholder="Tell us about your project..."
+                          className="min-h-[150px] rounded-xl resize-none"
+                          {...field}
                         />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
                 />
-                
-                <Button 
-                  type="submit" 
-                  className="w-full h-12 rounded-xl text-lg" 
+
+                <Button
+                  type="submit"
+                  className="w-full h-12 rounded-xl text-lg"
                   disabled={isPending}
                 >
                   {isPending ? "Sending..." : "Send Message"}
@@ -135,7 +162,7 @@ export default function Contact() {
           </Card>
         </div>
       </Section>
-      
+
       <Footer />
     </div>
   );

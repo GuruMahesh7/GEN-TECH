@@ -7,22 +7,22 @@ import { Check, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    title: "Brand Identity",
-    description: "A complete visual system that communicates your values and distinguishes you from competitors.",
-    deliverables: ["Logo Design", "Color Palette", "Typography System", "Brand Guidelines", "Stationery Design"],
-    price: "Starting at $5k",
+    title: "Digital Transformation",
+    description: "Modernize your business operations with cutting-edge technology solutions that drive efficiency and growth.",
+    deliverables: ["Tech Consultation", "Cloud Migration", "Process Automation", "System Integration", "Data Analytics"],
+    price: "Custom Quote",
   },
   {
-    title: "Web Development",
-    description: "High-performance, responsive websites built to convert visitors into loyal customers.",
-    deliverables: ["UX/UI Design", "Frontend Development", "CMS Integration", "SEO Optimization", "Performance Tuning"],
-    price: "Starting at $8k",
+    title: "Custom Software",
+    description: "Scalable, high-performance web and mobile applications tailored to your specific business needs.",
+    deliverables: ["Web App Development", "Mobile App Development", "API Design", "Database Architecture", "QA Testing"],
+    price: "Starting at ₹10k",
   },
   {
-    title: "Marketing Strategy",
-    description: "Data-driven campaigns and content strategies to grow your audience and revenue.",
-    deliverables: ["Market Research", "Content Strategy", "Social Media Kits", "Email Templates", "Analytics Setup"],
-    price: "Starting at $3k/mo",
+    title: "Strategic Innovation",
+    description: "Future-proof your business with data-driven insights and emerging technology strategies.",
+    deliverables: ["Market Analysis", "Tech Roadmap", "Product Strategy", "Growth Hacking", "Performance Metrics"],
+    price: "Starting at ₹5k/mo",
   },
 ];
 
@@ -30,7 +30,7 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       <Section className="pt-48 pb-12">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl mb-6">Our Services</h1>
@@ -71,15 +71,15 @@ export default function Services() {
                 {/* Visual placeholder */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-50" />
                 <div className="text-center relative z-10">
-                   <span className="block text-sm text-muted-foreground mb-2">Investment</span>
-                   <span className="text-3xl font-bold text-primary">{service.price}</span>
+                  <span className="block text-sm text-muted-foreground mb-2">Investment</span>
+                  <span className="text-3xl font-bold text-primary">{service.price}</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </Section>
-      
+
       <Footer />
     </div>
   );

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -7,15 +8,19 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useLocation } from "wouter";
 
 // Pages
-import Home from "@/pages/Home";
-import About from "@/pages/About";
-import Services from "@/pages/Services";
-import Projects from "@/pages/Projects";
-import Pricing from "@/pages/Pricing";
-import Contact from "@/pages/Contact";
-import Blog from "@/pages/Blog";
-import Testimonials from "@/pages/Testimonials";
-import NotFound from "@/pages/not-found";
+import { Suspense, lazy } from "react";
+import { Loader2 } from "lucide-react";
+
+// Lazy Pages
+const Home = lazy(() => import("@/pages/Home"));
+const About = lazy(() => import("@/pages/About"));
+const Services = lazy(() => import("@/pages/Services"));
+const Projects = lazy(() => import("@/pages/Projects"));
+const Pricing = lazy(() => import("@/pages/Pricing"));
+const Contact = lazy(() => import("@/pages/Contact"));
+const Blog = lazy(() => import("@/pages/Blog"));
+const Testimonials = lazy(() => import("@/pages/Testimonials"));
+const NotFound = lazy(() => import("@/pages/not-found"));
 
 // Page Transition Wrapper
 function PageWrapper({ children }: { children: React.ReactNode }) {
@@ -33,6 +38,10 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
 
 function Router() {
   const [location] = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <AnimatePresence mode="wait">
@@ -74,7 +83,15 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        <Suspense
+          fallback={
+            <div className="flex items-center justify-center min-h-screen">
+              <Loader2 className="h-8 w-8 animate-spin text-primary" />
+            </div>
+          }
+        >
+          <Router />
+        </Suspense>
       </TooltipProvider>
     </QueryClientProvider>
   );
