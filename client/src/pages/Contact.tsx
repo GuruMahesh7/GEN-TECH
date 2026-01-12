@@ -63,7 +63,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Email Us</h4>
-                  <p className="text-muted-foreground">hello@gentech.com</p>
+                  <p className="text-muted-foreground">gurumaheshbusani@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -72,7 +72,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Call Us</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">7672018022</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -81,7 +81,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg">Visit Us</h4>
-                  <p className="text-muted-foreground">123 Design District<br />New York, NY 10013</p>
+                  <p className="text-muted-foreground">Hyderabad<br />Telangana</p>
                 </div>
               </div>
             </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} className="h-12 rounded-xl" />
+                        <Input placeholder="Enter your name" {...field} className="h-12 rounded-xl" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -111,7 +111,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>Email</FormLabel>
                       <FormControl>
-                        <Input placeholder="john@example.com" {...field} className="h-12 rounded-xl" />
+                        <Input placeholder="Enter your email" {...field} className="h-12 rounded-xl" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
