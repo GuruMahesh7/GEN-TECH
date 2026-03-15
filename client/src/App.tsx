@@ -16,7 +16,6 @@ const Home = lazy(() => import("@/pages/Home"));
 const About = lazy(() => import("@/pages/About"));
 const Services = lazy(() => import("@/pages/Services"));
 const Projects = lazy(() => import("@/pages/Projects"));
-const Pricing = lazy(() => import("@/pages/Pricing"));
 const Contact = lazy(() => import("@/pages/Contact"));
 const Blog = lazy(() => import("@/pages/Blog"));
 const Testimonials = lazy(() => import("@/pages/Testimonials"));
@@ -57,9 +56,6 @@ function Router() {
         </Route>
         <Route path="/projects">
           <PageWrapper><Projects /></PageWrapper>
-        </Route>
-        <Route path="/pricing">
-          <PageWrapper><Pricing /></PageWrapper>
         </Route>
         <Route path="/contact">
           <PageWrapper><Contact /></PageWrapper>

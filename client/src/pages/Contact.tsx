@@ -53,7 +53,7 @@ export default function Contact() {
           <div>
             <h1 className="text-5xl md:text-6xl mb-8">Let's talk about your project.</h1>
             <p className="text-xl text-muted-foreground mb-12">
-              Fill out the form and we'll get back to you within 24 hours. We're excited to hear from you.
+              Fill out the form and I'll get back to you within 24 hours. I'm excited to hear from you.
             </p>
 
             <div className="space-y-8">
@@ -62,7 +62,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg">Email Us</h4>
+                  <h4 className="font-bold text-lg">Email</h4>
                   <p className="text-muted-foreground">gurumaheshbusani@gmail.com</p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg">Call Us</h4>
+                  <h4 className="font-bold text-lg">Call</h4>
                   <p className="text-muted-foreground">7672018022</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-lg">Visit Us</h4>
+                  <h4 className="font-bold text-lg">Location</h4>
                   <p className="text-muted-foreground">Hyderabad<br />Telangana</p>
                 </div>
               </div>

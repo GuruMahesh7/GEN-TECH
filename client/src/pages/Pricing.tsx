@@ -78,7 +78,7 @@ export default function Pricing() {
             </Link>
 
             <div className="mt-8 space-y-4">
-              {["Everything in Growth", "Legacy System Migration", "Microservices Architecture", "24/7 SLA Support", "Dedicated DevOps Team"].map((item) => (
+              {["Everything in Growth", "Legacy System Migration", "Microservices Architecture", "24/7 SLA Support", "Priority DevOps Support"].map((item) => (
                 <div key={item} className="flex items-center gap-3 text-sm">
                   <Check className="w-4 h-4 text-green-500" /> {item}
                 </div>

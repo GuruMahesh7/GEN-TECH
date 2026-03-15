@@ -21,13 +21,13 @@ export default function Home() {
             className="max-w-4xl mx-auto text-center"
           >
             <h1 className="font-display text-5xl sm:text-7xl font-bold tracking-tight text-primary mb-8 leading-[1.1]">
-              We build brands that <br />
+              I build brands that <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400">
                 don't be ignored.
               </span>
             </h1>
             <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-              Gen Tech delivers enterprise-grade software solutions, cloud infrastructure, and digital products that solve complex challenges and drive growth.
+              I deliver enterprise-grade software solutions, cloud infrastructure, and digital products that solve complex challenges and drive growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -72,7 +72,7 @@ export default function Home() {
           <div>
             <h2 className="text-4xl md:text-5xl mb-6">Code isn't just syntax. <br />It's a business engine.</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Most projects fail because they value features over functionality. We bridge the gap between complex engineering and business value to build systems that scale effortlessly.
+              Most projects fail because they value features over functionality. I bridge the gap between complex engineering and business value to build systems that scale effortlessly.
             </p>
             <ul className="space-y-4">
               {[
@@ -126,9 +126,9 @@ export default function Home() {
       {/* Services Preview */}
       <Section className="bg-muted/30">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="text-4xl font-bold mb-4">Our Expertise</h2>
+          <h2 className="text-4xl font-bold mb-4">My Expertise</h2>
           <p className="text-lg text-muted-foreground">
-            We focus on three core pillars to build comprehensive brand experiences.
+            I focus on three core pillars to build comprehensive brand experiences.
           </p>
         </div>
 
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-6xl font-bold mb-8">Ready to modernize your business?</h2>
           <p className="text-xl text-primary-foreground/60 mb-10 max-w-2xl mx-auto">
-            Book a discovery call today and let's discuss how we can help you reach your goals.
+            Book a discovery call today and let's discuss how I can help you reach your goals.
           </p>
           <Link
             href="/contact"

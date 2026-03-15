@@ -85,8 +85,8 @@ export default function Projects() {
               Engineering <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400">Impact.</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              We don't just write code. We build digital ecosystems that power industries.
-              Here is a selection of our recent technical achievements.
+              I don't just write code. I build digital ecosystems that power industries.
+              Here is a selection of my recent technical achievements.
             </p>
           </motion.div>
         </div>

@@ -11,16 +11,16 @@ export function Footer() {
               GEN TECH<span className="text-accent">.</span>
             </Link>
             <p className="text-primary-foreground/60 max-w-xs leading-relaxed">
-              We build software that powers your business. Enterprise-grade technology solutions for ambitious companies.
+              I build software that powers your business. Enterprise-grade technology solutions for ambitious companies.
             </p>
           </div>
 
           <div>
             <h4 className="font-display font-semibold mb-6">Company</h4>
             <ul className="space-y-4">
-              <li><Link href="/about" className="text-primary-foreground/60 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/about" className="text-primary-foreground/60 hover:text-white transition-colors">About Me</Link></li>
               <li><Link href="/services" className="text-primary-foreground/60 hover:text-white transition-colors">Services</Link></li>
-              <li><Link href="/projects" className="text-primary-foreground/60 hover:text-white transition-colors">Our Work</Link></li>
+              <li><Link href="/projects" className="text-primary-foreground/60 hover:text-white transition-colors">My Work</Link></li>
               <li><Link href="/careers" className="text-primary-foreground/60 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>
@@ -29,7 +29,6 @@ export function Footer() {
             <h4 className="font-display font-semibold mb-6">Resources</h4>
             <ul className="space-y-4">
               <li><Link href="/blog" className="text-primary-foreground/60 hover:text-white transition-colors">Insights</Link></li>
-              <li><Link href="/pricing" className="text-primary-foreground/60 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/faq" className="text-primary-foreground/60 hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/contact" className="text-primary-foreground/60 hover:text-white transition-colors">Contact</Link></li>
             </ul>

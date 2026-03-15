@@ -9,7 +9,7 @@ const posts = [
   {
     title: "Why Your Custom Software Project Failed (And How to Fix It)",
     problem: "70% of digital transformation projects fall short of their goals due to poor alignment and scope creep.",
-    solution: "We implement rigorous discovery phases and agile feedback loops to ensure engineering matches business intent.",
+    solution: "I implement rigorous discovery phases and agile feedback loops to ensure engineering matches business intent.",
     takeaway: "Don't write a line of code until you've validated the user journey.",
     date: "Jan 15, 2025",
     image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80",
@@ -29,7 +29,7 @@ const posts = [
   {
     title: "The Hidden ROI of Code Quality",
     problem: "Technical debt is silent killer of velocity. 'Quick and dirty' features today become unmaintainable legacy code tomorrow.",
-    solution: "We enforce strict TDD (Test Driven Development) and CI/CD protocols to keep velocity high year after year.",
+    solution: "I enforce strict TDD (Test Driven Development) and CI/CD protocols to keep velocity high year after year.",
     takeaway: "Clean code isn't a luxury; it's an asset that lowers long-term OpEx.",
     date: "Dec 20, 2024",
     image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&q=80",

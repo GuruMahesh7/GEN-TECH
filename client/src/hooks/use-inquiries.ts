@@ -27,7 +27,7 @@ export function useCreateInquiry() {
     onSuccess: () => {
       toast({
         title: "Message Sent",
-        description: "We'll get back to you shortly.",
+        description: "I'll get back to you shortly.",
       });
     },
     onError: (error) => {

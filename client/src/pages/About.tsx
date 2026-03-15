@@ -11,37 +11,37 @@ export default function About() {
 
       <Section className="pt-48 pb-24">
         <div className="max-w-4xl mx-auto text-center mb-24">
-          <h1 className="text-5xl md:text-7xl mb-8">More than just a<br /> tech company.</h1>
+          <h1 className="text-5xl md:text-7xl mb-8">More than just a<br /> developer.</h1>
           <p className="text-xl text-muted-foreground leading-relaxed">
-            We are strategic partners for brands that want to lead their industry.
-            We don't just write code; we solve complex business problems through technology and innovation.
+            I am a strategic partner for brands that want to lead their industry.
+            I don't just write code; I solve complex business problems through technology and innovation.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 items-center mb-32">
           <div className="relative">
-            {/* unsplash team working */}
+            {/* unsplash workspace */}
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
-              alt="Team collaborating"
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+              alt="Developer workspace"
               className="rounded-3xl shadow-2xl"
             />
             <div className="absolute inset-0 rounded-3xl bg-primary/10 mix-blend-multiply" />
           </div>
           <div>
-            <h2 className="text-3xl font-bold mb-6">Our Philosophy</h2>
+            <h2 className="text-3xl font-bold mb-6">My Philosophy</h2>
             <div className="space-y-8">
               <div>
                 <h3 className="text-xl font-bold mb-2">Engineering Excellence</h3>
-                <p className="text-muted-foreground">We write clean, documented, and testable code. Every system is built to last and designed to scale.</p>
+                <p className="text-muted-foreground">I write clean, documented, and testable code. Every system is built to last and designed to scale.</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Scalable Solutions</h3>
-                <p className="text-muted-foreground">We build with the future in mind. Your technology should grow with your business, not hold it back.</p>
+                <p className="text-muted-foreground">I build with the future in mind. Your technology should grow with your business, not hold it back.</p>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Security First</h3>
-                <p className="text-muted-foreground">We prioritize security at every layer of the stack, ensuring your data and your customers remain protected.</p>
+                <p className="text-muted-foreground">I prioritize security at every layer of the stack, ensuring your data and your customers remain protected.</p>
               </div>
             </div>
           </div>
@@ -50,8 +50,8 @@ export default function About() {
 
       <Section className="bg-muted/30">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">How We Work</h2>
-          <p className="text-muted-foreground text-lg">Our proven process for delivering exceptional results.</p>
+          <h2 className="text-4xl font-bold mb-4">How I Work</h2>
+          <p className="text-muted-foreground text-lg">My proven process for delivering exceptional results.</p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6">
@@ -73,55 +73,68 @@ export default function About() {
       </Section>
 
       <Section>
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Our Core Team</h2>
-          <p className="text-muted-foreground text-lg">The minds behind the technology.</p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {[
-            {
-              name: "Mahesh",
-              role: "Founder & CTO",
-              image: "/mahesh (2).png",
-              bio: "work with startups and businesses to create fast, modern websites that users trust and businesses grow with."
-            },
-            {
-              name: "Pranav",
-              role: "Head of Product",
-              image: "/pranav.png",
-              bio: "Product strategist with a passion for user-centric design and agile development methodologies."
-            },
-            {
-              name: "Praneeth",
-              role: "Lead Architect",
-              image: "/pranneth.jpeg",
-              bio: "Cloud infrastructure expert specializing in scalable microservices and high-performance systems."
-            }
-          ].map((member, i) => (
-            <div key={i} className="group text-center">
-              <div className="relative w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-[1fr_1.5fr] gap-12 lg:gap-16 items-center">
+            {/* Image Side */}
+            <div className="relative group mx-auto w-full max-w-[280px] lg:max-w-[340px]">
+              <div className="relative aspect-square rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-xl ring-1 ring-border/50">
                 <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src="/mahesh (2).png"
+                  alt="Mahesh"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  <a href="#" className="p-2 bg-white rounded-full text-primary hover:text-accent transition-colors" aria-label="LinkedIn">
+                <div className="absolute inset-0 bg-primary/10 mix-blend-multiply transition-colors duration-500 group-hover:bg-primary/0" />
+              </div>
+              {/* Decorative background */}
+              <div className="absolute -inset-4 bg-gradient-to-tr from-accent/20 to-primary/20 rounded-full -z-10 blur-2xl opacity-40 transition-opacity duration-500 group-hover:opacity-80" />
+            </div>
+
+            {/* Content Side */}
+            <div className="space-y-6 text-center md:text-left">
+              <div>
+                <h2 className="text-3xl md:text-5xl font-bold mb-2">Hi, I'm Mahesh</h2>
+                <p className="text-xl font-medium text-accent mb-6">Full Stack Developer</p>
+                <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed text-left">
+                  <p>
+                    I work with startups and businesses to create fast, modern websites that users trust and businesses grow with.
+                  </p>
+                  <p>
+                    My approach bridges the gap between complex engineering and business value. I don't just write code; I design scalable architectures, intuitive user interfaces, and robust backend systems tailored to solve unique challenges.
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-8 border-t border-border">
+                <h3 className="text-sm font-bold uppercase tracking-wider text-muted-foreground mb-4">Connect With Me</h3>
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                  <a 
+                    href="#" 
+                    className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary/5 text-primary hover:bg-primary hover:text-white transition-all duration-300 font-semibold"
+                    aria-label="LinkedIn"
+                  >
                     <Linkedin className="w-5 h-5" />
+                    LinkedIn
                   </a>
-                  <a href="#" className="p-2 bg-white rounded-full text-primary hover:text-accent transition-colors" aria-label="Twitter">
+                  <a 
+                    href="#" 
+                    className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary/5 text-primary hover:bg-primary hover:text-white transition-all duration-300 font-semibold"
+                    aria-label="Twitter"
+                  >
                     <Twitter className="w-5 h-5" />
+                    Twitter
+                  </a>
+                  <a 
+                    href="#" 
+                    className="flex items-center gap-2 px-6 py-3 rounded-full bg-primary/5 text-primary hover:bg-primary hover:text-white transition-all duration-300 font-semibold"
+                    aria-label="GitHub"
+                  >
+                    <Github className="w-5 h-5" />
+                    GitHub
                   </a>
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
-              <p className="text-primary font-medium mb-3">{member.role}</p>
-              <p className="text-muted-foreground text-sm max-w-sm mx-auto leading-relaxed">
-                {member.bio}
-              </p>
             </div>
-          ))}
+          </div>
         </div>
       </Section>
 

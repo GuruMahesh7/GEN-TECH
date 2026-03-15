@@ -6,19 +6,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Gen Tech completely transformed how we present ourselves to the market. Our leads increased by 200% within the first month of launching the new site.",
+    quote: "Mahesh completely transformed how we present ourselves to the market. Our leads increased by 200% within the first month of launching the new site.",
     author: "Sarah Jenkins",
     role: "CEO, FinTech Sol",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop"
   },
   {
-    quote: "They understood our vision better than we did. The brand identity they created perfectly captures our values while feeling modern and fresh.",
+    quote: "He understood our vision better than we did. The brand identity he created perfectly captures our values while feeling modern and fresh.",
     author: "Michael Chen",
     role: "Founder, EcoHouse",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop"
   },
   {
-    quote: "Professional, responsive, and incredibly talented. Working with Gen Tech felt like having a dedicated design team in-house.",
+    quote: "Professional, responsive, and incredibly talented. Working with Mahesh felt like having a dedicated developer in-house.",
     author: "Elena Rodriguez",
     role: "Marketing Director, Lumina",
     avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop"
@@ -34,7 +34,7 @@ export default function Testimonials() {
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl mb-6">Client Stories</h1>
           <p className="text-xl text-muted-foreground">
-            Don't just take our word for it. Here's what our partners say.
+            Don't just take my word for it. Here's what my partners say.
           </p>
         </div>
       </Section>
